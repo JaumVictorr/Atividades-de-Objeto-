@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const pessoa ={
+            nome : 'João Victor',
+            idade : 17,
+            email : 'aaaaa.Aaa@mail.com'
+        }
+
+
+
+
+        const livro = {
+            titulo : 'Namorada de Aluguel',
+            autor : 'Reiji Miyajima',
+            anoPublicacao : 2017,
+            
+        }
+        console.log(livro.autor)
+
+
+
+
+
+        const pessoa ={
+            nome : 'João Victor',
+            idade : 17,
+            email : 'aaaaa.Aaa@mail.com'
+        }
+
+        pessoa.endereco = 'endereço'
+
+
+
+
+
+
+
+
+
+
+        const pessoa ={
+            nome : 'João Victor',
+            idade : 17,
+            email : 'aaaaa.Aaa@mail.com',
+            cumprimentar(){
+                console.log('Olá, meu nome é ' + this.nome)
+            }
+        }
+        
+
+        pessoa.endereco = 'endereço'
+
+
+
+
+
+
+        function imprimirValor(j){
+            for (a in j){
+                console.log(a)
+                console.log(j[a])
+            }
+        }
+
+
+
+
+        const pessoa ={
+            nome : 'João Victor',
+            idade : 17,
+            email : 'aaaaa.Aaa@mail.com',
+            cumprimentar(){
+                console.log('Olá, meu nome é ' + this.nome)
+            }
+        }
+        
+
+        pessoa.endereco = 'endereço'
+
+
+
+
+
+
+
+
+
+
+        const carro = {
+            marca : 'Toyota',
+            modelo : 'Corola',
+            proprietario :{
+                nome : 'Antônio',
+                idade : 43
+            }
+        }
+
+
+
+
+
+
+        const carro = {
+            marca : 'Toyota',
+            modelo : 'Corola',
+            proprietario :{
+                nome : 'Antônio',
+                idade : 43
+            }
+        }
+
+        carro.proprietario.idade = 40
+
+
+
+
+
+
+
+
+        function atividade8(objeto, chave, valor){
+            objeto[chave] = valor
+
+        }
+
+
+
+
+
+
+        function atividade9(objeto, chave){
+            if (objeto[chave]){
+             return true   
+            } else{
+                return false
+            }
+        }
+
+
+
+        function atividade10(lista){
+            let idoso = 0
+            let nomeDoMaisVelho = ''
+            for (objeto of lista){
+                if (objeto['objeto']  > idoso){
+                    idoso = objeto['idade']
+                    nomeDoMaisVelho = objeto['nome']
+                }
+            }
+            console.log(nomeDoMaisVelho + 'tem' + idoso + 'anos')
+        }
+
+        const pessoa = [
+        { nome: 'Ana', idade: 25 },
+        { nome: 'João', idade: 30 },
+        { nome: 'Maria', idade: 28 }
+    ]
+
+        const nomeMaisVelho = encontrarPessoaMaisVelha(pessoas);
+        console.log(nomeMaisVelho); 
+
+
+        
+        const katana = {
+            material : 'Ferro',
+            tsuba : 'Circular com uma pelucia branca',
+            tamanho : 102,
+            amolacao : 'Sem corte',
+            lamina : 'Curva de um único fio',
+            cabo : 'longa',
+            bainha :{
+                sageo : 'Corda Branca',
+                cor : 'Preta com sinais de + branco',
+                kojiri : 'Arredondada'
+            },
+
+            amolarKatana(){
+                this.amolacao = 'Afiada'
+            },
+
+            cortar(){
+                console.log('Ximmmmm, vc causou 1 de dano')
+            },
+
+            guardar(){
+                console.log('Sua espada não corre risco de quebrar')
+            }
+
+
+        }
+
+    </script>
+</body>
+</html>
